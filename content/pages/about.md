@@ -20,15 +20,16 @@ CDN โฮสต์ไฟล์สำหรับเว็บไซต์ผม 
 
 ## บล็อกนี้ {#blog}
 
-- 👨‍💻 ซอร์สโค้ดอยู่บน [GitHub](https://github.com/lazywasabi/blog)
-- 🏗 สร้างด้วย [Hugo](https://gohugo.io/)
-- 🎨 ใช้ [Tailwind CSS](https://tailwindcss.com) สร้างธีม
-  - 🚀 ประมวลผลผ่าน [Hugo Pipes](https://gohugo.io/hugo-pipes/introduction/)
-  - 🔤 ใช้ปลั๊กอิน [@tailwindcss/typography](https://github.com/tailwindlabs/tailwindcss-typography)
-  - 🌙 ธีมสีมืดใช้ [Dark Mode ของ Tailwind CSS](https://tailwindcss.com/docs/dark-mode)
-- 🅰 ฟอนต์หลักคือ [IBM Plex Sans Thai](https://www.ibm.com/plex/)
-- ⭐ ไอคอนจาก [Tabler Icons](https://tablericons.com)
-- 😎 ใช้ [Twemoji](https://github.com/twitter/twemoji/) แสดงอิโมจิ
-- 🔗 ปุ่มแชร์ใช้ [Web Share API](/blog/share-button-with-web-share-api/)
-- #️⃣ แสดงไอคอนลิงก์หัวข้อด้วย [AnchorJS](https://www.bryanbraun.com/anchorjs/)
-- 💬 ระบบแสดงความคิดเห็นโดย [utterances 🔮](https://utteranc.es)
+- ซอร์สโค้ดอยู่บน [GitHub](https://github.com/lazywasabi/blog)
+- สร้างด้วย [Hugo](https://gohugo.io/)
+- โฮสต์บน [Vercel](https://vercel.com/)
+- ใช้ [Tailwind CSS](https://tailwindcss.com) สร้างธีม
+  - ประมวลผลผ่าน [Hugo Pipes](https://gohugo.io/hugo-pipes/introduction/)
+  - ใช้ปลั๊กอิน [@tailwindcss/typography](https://github.com/tailwindlabs/tailwindcss-typography)
+  - ธีมสีมืดใช้ [Dark Mode ของ Tailwind CSS](https://tailwindcss.com/docs/dark-mode)
+- ฟอนต์หลักคือ [IBM Plex Sans Thai](https://www.ibm.com/plex/)
+- ไอคอนจาก [Tabler Icons](https://tablericons.com)
+- ใช้ [Twemoji](https://github.com/twitter/twemoji/) แสดงอิโมจิ
+- ปุ่มแชร์ใช้ [Web Share API](/blog/share-button-with-web-share-api/)
+- แสดงไอคอนลิงก์หัวข้อด้วย [AnchorJS](https://www.bryanbraun.com/anchorjs/)
+- ระบบแสดงความคิดเห็นโดย [utterances 🔮](https://utteranc.es)

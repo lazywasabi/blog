@@ -1,0 +1,35 @@
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<link rel="shortcut icon" type="image/x-icon" href="/favicon.ico" />
+{{ .Site.Hugo.Generator }}
+
+{{ if .IsHome -}}
+  <title>{{ .Site.Title }}</title>
+  {{ else if eq .Kind "taxonomy" }}
+  <title>{{ title .Data.Singular }}: {{ .Title }} - {{ .Site.Title }}</title>
+  {{ else if eq .Kind "term" }}
+  <title>{{ title .Data.Singular }}: {{ .Title }} - {{ .Site.Title }}</title>
+  {{- else if eq .Kind "404" -}}
+  <title>ไม่พบหน้าเว็บ - {{ .Site.Title }}</title>
+  {{ else if .Params.seo_title }}
+  <title>{{ .Params.seo_title }} - {{ .Site.Title }}</title>
+  {{ else }}
+  <title>{{ .Title }} - {{ .Site.Title }}</title>
+{{ end }}
+
+<meta
+  name="description"
+  content="{{ with .Description }}{{ . }}{{ else }}{{ if .IsPage }}{{ .Summary }}{{ else }}{{ with .Site.Params.description }}{{ . }}{{ end }}{{ end }}{{ end }}"
+/>
+<link rel="canonical" href="{{ .Permalink }}" />
+<link
+  rel="alternate"
+  href="/index.xml"
+  type="application/rss+xml"
+  title="{{ .Site.Title }}"
+/>
+
+{{ partial "head/opengraph.html" . }}
+{{ partial "head/twitter_cards.html" . }}
+
+{{ partial "head/schema.html" . }}

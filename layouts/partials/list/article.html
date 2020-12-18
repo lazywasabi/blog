@@ -1,0 +1,10 @@
+<article>
+  <a class="block" href="{{ .Permalink | relURL }}">
+    {{ partial "list/meta.html" . }}
+    <h2
+      class="mt-1 font-semibold text-lg md:mt-2 md:text-2xl hover:text-green-600 dark:hover:text-green-300"
+    >
+      {{ .Title }}
+    </h2>
+  </a>
+</article>

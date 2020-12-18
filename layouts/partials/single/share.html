@@ -1,0 +1,32 @@
+<div
+  class="mt-6 pt-6 flex items-center justify-between border-t border-gray-300 dark:border-gray-700 md:mt-12 md:pt-8"
+>
+  <button
+    class="share-button invisible text-gray-500 hover:text-green-500 dark:text-gray-400 dark:hover:text-green-400 focus:outline-none focus:ring"
+  >
+    <svg
+      xmlns="http://www.w3.org/2000/svg"
+      class="w-6 stroke-current"
+      viewBox="0 0 24 24"
+      stroke-width="1.5"
+      fill="none"
+      stroke-linecap="round"
+      stroke-linejoin="round"
+    >
+      <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+      <circle cx="6" cy="12" r="3" />
+      <circle cx="18" cy="6" r="3" />
+      <circle cx="18" cy="18" r="3" />
+      <line x1="8.7" y1="10.7" x2="15.3" y2="7.3" />
+      <line x1="8.7" y1="13.3" x2="15.3" y2="16.7" />
+    </svg>
+  </button>
+  <a
+    class="text-gray-500 hover:text-green-500 dark:text-gray-400 dark:hover:text-green-400"
+    href="https://github.com/lazywasabi/blog/blob/master/content/{{ .Section }}/{{ .File.LogicalName | urlize }}"
+    target="_blank"
+    rel="noopener noreferrer"
+  >
+    แก้ไขหน้านี้บน GitHub
+  </a>
+</div>

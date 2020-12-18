@@ -1,0 +1,18 @@
+{{ define "main" }}
+  <article class="{{ .Site.Params.content_margin }}">
+    <div>
+      <h1 class="{{ .Site.Params.title_font }}">
+        {{ .Title }}
+      </h1>
+      {{ if eq .Section "posts" }}
+        {{ partial "single/meta.html" . }}
+      {{ end }}
+      {{ partial "single/featured_image.html" . }}
+    </div>
+    {{ partial "single/content.html" . }}
+  </article>
+  {{ partial "single/share.html" . }}
+  {{ if eq .Section "posts" }}
+    {{ partialCached "single/comments.html" . }}
+  {{ end }}
+{{ end }}

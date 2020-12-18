@@ -1,0 +1,26 @@
+<div class="mt-2 text-xs text-gray-600 dark:text-gray-400 md:mt-3 md:text-sm">
+  <span class="mr-1">🕒</span>
+  {{ if ne .Lastmod .Date }}
+    อัปเดตล่าสุด:
+    <time datetime="{{ .Lastmod.Format "2006-01-02T15:04:05Z07:00" }}">
+      {{ .Lastmod.Format "Jan 2, 2006" }}
+    </time>
+    /
+  {{ end }}
+  เผยแพร่เมื่อ:
+  <time datetime="{{ .Date.Format "2006-01-02T15:04:05Z07:00" }}">
+    {{ .Date.Format "Jan 2, 2006" }}
+  </time>
+</div>
+<div class="flex flex-wrap items-center space-x-1 md:mt-1">
+  🏷️
+  {{ range .Params.tags }}
+    <a
+      class="tag"
+      href="{{ "/tags/" | relLangURL }}{{ . | urlize }}"
+      class="tag"
+    >
+      {{ . }}
+    </a>
+  {{ end }}
+</div>

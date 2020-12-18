@@ -1,0 +1,26 @@
+{
+  "name": "lazywasabi.com",
+  "version": "1.0.0",
+  "description": "LazyWasabi Blog",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/lazywasabi/lazywasabi.com.git"
+  },
+  "author": "LazyWasabi",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/lazywasabi/lazywasabi.com/issues"
+  },
+  "homepage": "https://github.com/lazywasabi/lazywasabi.com#readme",
+  "dependencies": {
+    "@tailwindcss/typography": "^0.3.1",
+    "autoprefixer": "^10.1.0",
+    "postcss": "^8.2.1",
+    "postcss-cli": "^8.3.1",
+    "tailwindcss": "^2.0.2"
+  }
+}

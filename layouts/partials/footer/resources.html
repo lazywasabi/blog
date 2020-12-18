@@ -1,0 +1,18 @@
+{{ $mainJS := resources.Get "js/main.js" }}
+{{ $themeJS := resources.Get "js/theme.js" }}
+
+{{ $mainJS = slice $mainJS $themeJS | resources.Concat "js/main.js" | minify | fingerprint }}
+
+<script
+  defer
+  src="https://cdn.lazywasabi.net/emoji/latest/twemoji.min.js"
+></script>
+<script defer src="{{ $mainJS.Permalink | relURL }}" integrity="{{ $mainJS.Data.Integrity }}" crossorigin="anonymous"></script>
+<script src="https://cdn.lazywasabi.net/libs/anchor-js/4.3.0/anchor.min.js"></script>
+<script>
+  anchors.options = {
+    placement: 'left',
+    icon: '#',
+  };
+  anchors.add('.prose h2, .prose h3, .prose h4');
+</script>

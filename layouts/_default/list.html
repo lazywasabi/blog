@@ -1,0 +1,15 @@
+{{ define "main" }}
+  <div class="{{ .Site.Params.content_margin }}">
+    {{ if not .IsHome }}
+      <h1 class="{{ .Site.Params.title_font }}">
+        {{ .Title }}
+      </h1>
+    {{ end }}
+    <div class="mt-4 space-y-6 md:mt-8 md:space-y-10">
+      {{ range .Paginator.Pages }}
+        {{ partial "list/article.html" . }}
+      {{ end }}
+      {{ partial "list/pagination.html" . }}
+    </div>
+  </div>
+{{ end }}

@@ -1,0 +1,16 @@
+{{ if hugo.IsProduction }}
+  <div class="mt-6 md:mt-8">
+    <script
+      src="https://utteranc.es/client.js"
+      repo="lazywasabi/blog-comments"
+      issue-term="pathname"
+      theme="github-dark"
+      crossorigin="anonymous"
+      async
+    ></script>
+  </div>
+  {{ else }}
+  <div class="mt-6 h-72 flex items-center justify-center bg-gray-800 md:mt-8">
+    <span class="text-4xl text-white font-semibold">Comments</span>
+  </div>
+{{ end }}

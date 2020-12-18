@@ -1,0 +1,22 @@
+<figure {{ with .Get "class" }} class="{{.}}" {{ end }}>
+  <video class="mx-auto" src="{{ .Get "src" | absURL }}" preload {{ with .Get "controls" }}controls="{{ . }}" {{ end }}
+    {{ with .Get "autoplay" }}autoplay="{{ . }}" {{ end }} {{ with .Get "loop" }}loop="{{ . }}" {{ end }}
+    {{ with .Get "muted" }}muted="{{ . }}" {{ end }} {{ with .Get "width" }}width="{{ . }}" {{ end }}>
+    {{ with .Get "srcmp4" }}
+    <source src="{{ . | absURL }}" type="video/mp4">{{ end }}
+    {{ with .Get "srcwebm" }}
+    <source src="{{ . | absURL }}" type="video/webm">{{ end }}
+  </video>
+  {{ if or (or (.Get "title") (.Get "caption")) (.Get "attr")}}
+  <figcaption>{{ if isset .Params "title" }}
+    <h4>{{ .Get "title" }}</h4>{{ end }}
+    {{ if or (.Get "caption") (.Get "attr")}}
+    <p>
+      {{ .Get "caption" }}
+      {{ with .Get "attrlink"}}<a href="{{.}}"> {{ end }}
+        {{ .Get "attr" }}
+        {{ if .Get "attrlink"}}</a> {{ end }}
+    </p> {{ end }}
+  </figcaption>
+  {{ end }}
+</figure>

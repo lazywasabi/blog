@@ -1,0 +1,56 @@
+baseURL = "https://lazywasabi.com/"
+languageCode = "en-us"
+title = "LazyWasabi"
+Paginate = 10
+rssLimit = 10
+
+[params]
+  content_margin = "mt-6 sm:mt-8 md:mt-12 lg:mt-16"
+  title_font = "text-2xl md:text-3xl lg:text-4xl font-semibold"
+
+[permalinks]
+  posts = "/blog/:slug/"
+  pages = "/:slug/"
+
+[taxonomies]
+  tag = "tags"
+
+[menu]
+  [[menu.main]]
+    name = "บล็อก"
+    pre = "📝"
+    url = "/blog/"
+    weight = 1
+  [[menu.main]]
+    name = "เกี่ยวกับ"
+    pre = "🍣"
+    url = "/about/"
+    weight = 2
+  [[menu.main]]
+    name = "เสียงนำทางไทย ETS2/ATS"
+    pre = "🚚"
+    url = "/ets2thainav/"
+    weight = 3
+  [[menu.main]]
+    name = "ติดต่อ"
+    pre = "📧"
+    url = "/contact/"
+    weight = 4
+
+[markup]
+  [markup.goldmark]
+    [markup.goldmark.renderer]
+      hardWraps = true
+      unsafe = true
+
+[privacy]
+  [privacy.disqus]
+    disable = true
+  [privacy.googleAnalytics]
+    disable = true
+  [privacy.twitter]
+    enableDNT = true
+  [privacy.vimeo]
+    enableDNT = true
+  [privacy.youtube]
+    privacyEnhanced = true

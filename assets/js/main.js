@@ -14,14 +14,12 @@ if (navigator.share) {
   if (shareButton) {
     const pageTitle = document.querySelector('h1').textContent;
     const pageURL = document.location.href;
-    shareButton.classList.remove('invisible');
+    shareButton.classList.remove('hidden');
     shareButton.addEventListener('click', function (ev) {
       navigator.share({
         text: pageTitle,
         url: pageURL,
       });
     });
-  } else {
-    console.log('share button not found!');
   }
 }

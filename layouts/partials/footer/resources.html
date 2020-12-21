@@ -16,8 +16,11 @@
   src="https://cdn.lazywasabi.net/emoji/latest/twemoji.min.js"
 ></script>
 <script defer src="{{ $mainJS.Permalink | relURL }}" integrity="{{ $mainJS.Data.Integrity }}" crossorigin="anonymous"></script>
-<script
-  defer
-  src="https://static.cloudflareinsights.com/beacon.min.js"
-  data-cf-beacon='{"token": "4f952be73e804410bcad0e8c0c7f5c49"}'
-></script>
+
+{{ if hugo.IsProduction }}
+  <script
+    defer
+    src="https://static.cloudflareinsights.com/beacon.min.js"
+    data-cf-beacon='{"token": "4f952be73e804410bcad0e8c0c7f5c49"}'
+  ></script>
+{{ end }}

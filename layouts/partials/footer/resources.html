@@ -3,11 +3,6 @@
 
 {{ $mainJS = slice $mainJS $themeJS | resources.Concat "js/main.js" | minify | fingerprint }}
 
-<script
-  defer
-  src="https://cdn.lazywasabi.net/emoji/latest/twemoji.min.js"
-></script>
-<script defer src="{{ $mainJS.Permalink | relURL }}" integrity="{{ $mainJS.Data.Integrity }}" crossorigin="anonymous"></script>
 <script src="https://cdn.lazywasabi.net/libs/anchor-js/4.3.0/anchor.min.js"></script>
 <script>
   anchors.options = {
@@ -16,3 +11,13 @@
   };
   anchors.add('.prose h2, .prose h3, .prose h4');
 </script>
+<script
+  defer
+  src="https://cdn.lazywasabi.net/emoji/latest/twemoji.min.js"
+></script>
+<script defer src="{{ $mainJS.Permalink | relURL }}" integrity="{{ $mainJS.Data.Integrity }}" crossorigin="anonymous"></script>
+<script
+  defer
+  src="https://static.cloudflareinsights.com/beacon.min.js"
+  data-cf-beacon='{"token": "4f952be73e804410bcad0e8c0c7f5c49"}'
+></script>

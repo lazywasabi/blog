@@ -4,7 +4,7 @@ author: LazyWasabi
 slug: contact
 ---
 
-- Matodon: [@lazywasabi@mastodon.social](https://mastodon.social/@lazywasabi)
+- Mastodon: [@lazywasabi@mastodon.social](https://mastodon.social/@lazywasabi)
 - Twitter: [@lazywasabi](https://twitter.com/lazywasabi)
 
 หรือติดต่อผ่านอีเมล 📧

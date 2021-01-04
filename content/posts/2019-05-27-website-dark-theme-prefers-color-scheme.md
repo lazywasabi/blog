@@ -41,7 +41,7 @@ tags:
 
 ตอนนี้เบราว์เซอร์ยอดนิยม ไม่ว่าจะเป็น Chrome, Firefox, Safari, Edge ทั้งบนเดสก์ท็อปและมือถือ รองรับ `prefers-color-scheme` กันครบแล้ว ส่วนเบราว์เซอร์อื่นๆ ดูข้อมูลเพิ่มเติมได้[ด้านล่าง](#caniuse)เลย
 
-และแน่นอนครับ บล็อกนี้ก็รองรับ `prefers-color-scheme` ด้วย โดยเขียนปุ่มสร้างธีมขึ้นมาเอง และใช้ร่วมกับ [Dark Mode ของ Tailwind CSS](https://tailwindcss.com/docs/dark-mode)
+และแน่นอนครับ บล็อกนี้ก็รองรับ `prefers-color-scheme` ด้วย โดยเขียนปุ่มสลับธีมขึ้นมาเอง และใช้ร่วมกับ [Dark Mode ของ Tailwind CSS](https://tailwindcss.com/docs/dark-mode)
 
 ## ตัวอย่างการใช้งาน
 

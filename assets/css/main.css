@@ -96,3 +96,11 @@ img.emoji {
 .comment-content p:first-child {
   margin-top: 0 !important;
 }
+
+.link {
+  @apply text-green-600 dark:text-green-400;
+}
+
+.link:hover {
+  @apply border-b border-current;
+}

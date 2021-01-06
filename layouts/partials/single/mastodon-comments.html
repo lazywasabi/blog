@@ -3,7 +3,7 @@
     <div class="flex space-x-2 items-baseline">
       <h2 class="text-2xl font-semibold md:text-3xl">ความคิดเห็น</h2>
       <a
-        class="text-green-600 font-semibold dark:text-green-400 md:text-lg"
+        class="link font-semibold md:text-lg"
         href="https://{{ .host }}/interact/{{ .id }}?type=reply"
         target="_blank"
         rel="noopener noreferrer"
@@ -59,6 +59,11 @@
                   reply.account.display_name = reply.account.display_name.replace(`:${emoji.shortcode}:`,
                     `<img src="${escapeHtml(emoji.static_url)}" alt="Emoji ${emoji.shortcode}" height="20" width="20" />`);
                 });
+                if (reply.media_attachments[0] !== undefined) {
+                  attachmentsLink = '<a class="text-sm md:text-base" href="' + reply.uri + '" target="_blank" rel="noopener noreferrer">🔗 ดูไฟล์แนบ</a>';
+                } else {
+                  attachmentsLink = '';
+                }
                 mastodonComment =
                   `<div class="flex w-full space-x-2 md:space-x-4">
                      <div class="min-w-max">
@@ -79,6 +84,7 @@
                          </a>
                        </div>
                        <div class="comment-content mt-1 font-sans prose prose-green dark:prose-dark md:prose-lg">${reply.content}</div>
+                       <div class="font-sans prose prose-green dark:prose-dark">${attachmentsLink}</div>
                      </div>
                    </div>`;
                 document.getElementById('mastodon-comments-list').appendChild(DOMPurify.sanitize(mastodonComment, {'RETURN_DOM_FRAGMENT': true, 'ADD_ATTR': ['target']}));

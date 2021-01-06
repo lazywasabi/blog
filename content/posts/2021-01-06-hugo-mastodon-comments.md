@@ -12,7 +12,7 @@ tags:
 comments:
   host: mastodon.social
   username: lazywasabi
-  id:
+  id: 105509420056749945
 ---
 
 วิธีเพิ่มระบบความคิดเห็นใน Hugo ตัวเลือกที่ฟรีและง่ายสุดคือใช้ Disqus เพราะ Hugo [รองรับ Disqus](https://gohugo.io/content-management/comments/#add-disqus) ในตัว มีเทมเพลตให้เรียกใช้ได้เลย แต่ข้อเสียของ Disqus คือทำให้เว็บ[ช้าและไม่เป็นมิตร](https://notes.ayushsharma.in/2017/09/im-killing-disqus-comments-on-my-blog-heres-why)กับความเป็นส่วนตัวของผู้ใช้ ☹

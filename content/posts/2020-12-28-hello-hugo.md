@@ -11,6 +11,10 @@ tags:
   - Web Dev
   - Hugo
   - WordPress
+comments:
+  host: mastodon.social
+  username: lazywasabi
+  id: 105458234809804194
 ---
 
 บล็อกนี้ย้ายจาก WordPress มาใช้ Hugo แล้วครับ 🎉

@@ -92,3 +92,7 @@ img.emoji {
 .prose a.anchorjs-link:hover {
   @apply border-0;
 }
+
+.comment-content p:first-child {
+  margin-top: 0 !important;
+}

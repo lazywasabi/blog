@@ -12,7 +12,5 @@
     {{ partial "single/content.html" . }}
   </article>
   {{ partial "single/share.html" . }}
-  {{ if eq .Section "posts" }}
-    {{ partialCached "single/comments.html" . }}
-  {{ end }}
+  {{ partial "single/mastodon-comments.html" . }}
 {{ end }}

@@ -42,3 +42,5 @@ comments:
 - Edge Network ของ Netlify จำกัดแค่ [6 POPs](https://www.netlify.com/pricing/#high-performance-edge-points-of-presence) แต่ Vercel ใช้ได้ทั้ง [16 Regions](https://vercel.com/docs/edge-network/regions#routing)
 
 สุดท้ายนี้ บล็อกนี้โอเพนซอร์สด้วย ใครสนใจโค้ดเชิญที่ [GitHub](https://github.com/lazywasabi/blog) ได้เลย ส่วนรายละเอียดเพิ่มเติม เช่น ฟอนต์ ไอคอน ดูได้ที่[หน้าเกี่ยวกับ](/about/#blog)ครับ
+
+อ่านต่อ: [เพิ่มระบบแสดงความคิดเห็นใน Hugo ด้วย Mastodon](/blog/hugo-mastodon-comments/)

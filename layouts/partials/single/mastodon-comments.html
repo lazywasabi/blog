@@ -88,6 +88,7 @@
                      </div>
                    </div>`;
                 document.getElementById('mastodon-comments-list').appendChild(DOMPurify.sanitize(mastodonComment, {'RETURN_DOM_FRAGMENT': true, 'ADD_ATTR': ['target']}));
+                twemoji.parse(document.body);
               });
           } else {
             document.getElementById('mastodon-comments-list').innerHTML = "<p>ยังไม่มีความคิดเห็น</p>";

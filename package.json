@@ -18,7 +18,7 @@
   "homepage": "https://github.com/lazywasabi/lazywasabi.com#readme",
   "dependencies": {},
   "devDependencies": {
-    "@tailwindcss/typography": "^0.3.1",
+    "@tailwindcss/typography": "^0.4.0",
     "autoprefixer": "^10.2.1",
     "postcss": "^8.2.4",
     "postcss-cli": "^8.3.1",

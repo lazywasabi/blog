@@ -37,7 +37,7 @@ images:
 - เวอร์ชันม็อดล่าสุด: 3.3.0
 - อัปเดตเมื่อวันที่ 4 ก.พ. 2564
 - รองรับเกม Euro Truck Simulator 2 เวอร์ชัน 1.35 - 1.40
-- รองรับเกม American Truck Simulator เวอร์ชัน 1.35 - 1.39
+- รองรับเกม American Truck Simulator เวอร์ชัน 1.35 - 1.40
 - [ดูบันทึกการเปลี่ยนแปลง ↗](https://github.com/lazywasabi/ets2-thai-navigation/blob/master/CHANGELOG.md)
 
 ### ดาวน์โหลดผ่าน Steam Workshop (แนะนำ) {#download-steam}

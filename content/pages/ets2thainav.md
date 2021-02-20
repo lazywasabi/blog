@@ -16,9 +16,8 @@ images:
 - [บันทึกการเปลี่ยงแปลง ↗](https://github.com/lazywasabi/ets2-thai-navigation/blob/master/CHANGELOG.md)
 - [ซอร์สโค้ดบน GitHub ↗](https://github.com/lazywasabi/ets2-thai-navigation)
 
-<p class="p-4 bg-green-600 text-white rounded font-display">
-  <strong class="text-white">📢 ประกาศ (4 ก.พ. 64):</strong> ม็อดอัปเดตรองรับเกมเวอร์ชัน 1.40 แล้วครับ
-</p>
+**📢 ประกาศ (4 ก.พ. 64):** ม็อดอัปเดตรองรับเกมเวอร์ชัน 1.40 แล้วครับ
+{class="p-4 bg-green-600 text-white rounded font-display"}
 
 {{< youtube 9RmfC4OdFG4 >}}
 

@@ -18,7 +18,7 @@ tags:
 
 Web Share API ทำให้เว็บไซต์สามารถเรียกหน้าต่างแชร์ของระบบขึ้นมาได้แบบนี้
 
-{{< video src="https://cdn.lazywasabi.net/blog/i/pakin.me-web-share-api.mp4" width="300" controls="1" autoplay="1" muted="1" loop="1">}}
+{{< video src="https://cdn.lazywasabi.net/blog/i/lazywasabi-web-share-api.mp4" width="300" controls="1" autoplay="1" muted="1" loop="1">}}
 
 ข้อดีของ Web Share API คือเรามั่นใจได้เลยว่าจะมีช่องทางที่ผู้ใช้ต้องการแชร์ไปให้เลือกแน่นอน เพราะมันเป็นการแชร์ไปยังแอปที่ติดตั้งอยู่ในอุปกรณ์ของผู้ใช้ ปกติแล้วเราใช้แอปไหนเป็นประจำก็โหลดติดเครื่องกันไว้อยู่แล้วเนอะ แถมผู้ใช้ก็คุ้นเคยกับ UI และ UX การแชร์แบบนี้อยู่แล้วด้วย
 

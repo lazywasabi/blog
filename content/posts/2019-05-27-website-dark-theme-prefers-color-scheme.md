@@ -37,7 +37,7 @@ tags:
 
 โดยธีมที่เบราว์เซอร์เลือกใช้จะอิงจากการตั้งค่าธีมของระบบ เช่นบน [Windows](https://blogs.windows.com/windowsexperience/2019/04/01/windows-10-tip-dark-theme-in-file-explorer/), [macOS](https://developer.apple.com/documentation/appkit/supporting_dark_mode_in_your_interface), [Android](https://developer.android.com/preview/features/darktheme) แบบนี้
 
-{{< video src="https://cdn.lazywasabi.net/blog/i/pakin.me-light-dark-theme-may-2020.mp4" width="300" controls="1" autoplay="1" muted="1" loop="1" >}}
+{{< video src="https://cdn.lazywasabi.net/blog/i/lazywasabi-prefer-color-scheme.mp4" width="300" controls="1" autoplay="1" muted="1" loop="1" >}}
 
 ตอนนี้เบราว์เซอร์ยอดนิยม ไม่ว่าจะเป็น Chrome, Firefox, Safari, Edge ทั้งบนเดสก์ท็อปและมือถือรองรับ `prefers-color-scheme` กันครบแล้ว ส่วนเบราว์เซอร์อื่นๆ ดูข้อมูลเพิ่มเติมได้[ด้านล่าง](#browser-support)เลย
 

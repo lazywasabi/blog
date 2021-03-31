@@ -17,7 +17,7 @@ if (navigator.share) {
     shareButton.classList.remove('hidden');
     shareButton.addEventListener('click', function (ev) {
       navigator.share({
-        text: pageTitle,
+        title: pageTitle,
         url: pageURL,
       });
     });

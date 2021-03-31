@@ -24,7 +24,7 @@ Chrome 39 สำหรับแอนดรอยด์เพิ่มการ�
 
 **อัปเดต:** นอกจาก Chrome แล้ว เบราว์เซอร์อื่นๆ ที่มีพื้นฐานจาก Chromium เช่น [Brave](https://play.google.com/store/apps/details?id=com.brave.browser), [Samsung Internet Browser](https://play.google.com/store/apps/details?id=com.sec.android.app.sbrowser) ก็รองรับเช่นกัน รวมถึง[แอป Google บน iOS](https://dribbble.com/shots/1858627-iOS-Google-App-Colored-Headers) ด้วยครับ
 
-## ข้อมูลเบราว์เซอร์ที่รองรับ {#caniuse}
+## ข้อมูลเบราว์เซอร์ที่รองรับ {#browser-support}
 
 {{< caniuse meta-theme-color >}}
 

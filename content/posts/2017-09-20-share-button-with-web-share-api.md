@@ -2,7 +2,7 @@
 title: สร้างปุ่มแชร์ด้วย Web Share API
 author: LazyWasabi
 date: 2017-09-20T02:00:00+00:00
-lastmod: 2020-08-14
+lastmod: 2021-03-31
 slug: share-button-with-web-share-api
 images:
   - https://cdn.lazywasabi.net/blog/i/share-button-with-web-share-api.png
@@ -16,7 +16,7 @@ tags:
 
 ## Web Share API คืออะไร?
 
-Web Share API ทำให้เว็บไซต์สามารถเรียกหน้าต่างแชร์ของระบบขึ้นมาได้ โดยตอนนี้รองรับใน Chrome หรือเบราว์เซอร์อื่นๆ ที่พัฒนาจาก Chromium บนแอนดรอยด์ และ Safari ทั้งบน macOS และ iOS
+Web Share API ทำให้เว็บไซต์สามารถเรียกหน้าต่างแชร์ของระบบขึ้นมาได้แบบนี้
 
 {{< video src="https://cdn.lazywasabi.net/blog/i/pakin.me-web-share-api.mp4" width="300" controls="1" autoplay="1" muted="1" loop="1">}}
 
@@ -25,6 +25,8 @@ Web Share API ทำให้เว็บไซต์สามารถเรี
 นอกจากนี้เรายังสามารถกำหนดข้อมูลที่จะแชร์ได้ ไม่จำเป็นต้องเป็นหน้าเว็บที่เราดูอยู่ อาจเป็นหน้าเว็บอื่น หรือข้อความเปล่าๆ ไม่ต้องมี URL ก็ได้
 
 และข้อดีสุดท้ายคือ UI ของเว็บเรา ไม่จำเป็นต้องมีปุ่มแชร์หลายๆ ปุ่มให้รก ใช้แค่ปุ่มแชร์ปุ่มเดียวก็พอแล้ว
+
+**อัปเดต:** ตั้งแต่ Chromium 75 เป็นต้นไป สามารถ[แชร์ไฟล์](https://developer.mozilla.org/en-US/docs/Web/API/Navigator/share#Sharing_Files)ได้ด้วย
 
 ## ลองใช้ Web Share API
 
@@ -59,7 +61,15 @@ shareBtn.addEventListener('click', function (ev) {
 
 {{< codepen lazywasabi VMLWdv >}}
 
-## ข้อมูลเบราว์เซอร์ที่รองรับ {#caniuse}
+## ข้อมูลเบราว์เซอร์ที่รองรับ {#browser-support}
+
+**อัปเดต:** Chromium 89 รองรับ Web Share API บนเดสก์ท็อปแล้ว (เฉพาะ Windows และ Chrome OS)
+
+สรุปเบราว์เซอร์ที่รองรับ Web Share API:
+
+- เบราว์เซอร์ตระกูล Chromium บน Android, Windows และ Chrome OS
+- Safari ทั้งบน macOS และ iOS
+- Firefox บน Android
 
 {{< caniuse web-share >}}
 

@@ -10,33 +10,30 @@
       {{ partial "list/meta.html" . }}
     </div>
     <div class="hidden sm:block sm:w-64 sm:h-36">
-      {{ with .Params.images }}
-        {{ range first 1 . }}
-          {{ if hasPrefix . "https://source.unsplash.com" }}
-            <picture class="w-full h-full object-cover">
-              <source
-                srcset="
-                  data:image/gif;base64,R0lGODlhAQABAIAAAP///wAAACH5BAEAAAAALAAAAAABAAEAAAICRAEAOw==
-                "
-                media="(max-width: 639px)"
-              />
-              <img src="{{ . }}/288x162" alt="" />
-            </picture>
+      {{ if .Params.images }}
+        <picture class="w-full h-full object-cover">
+          <source
+            srcset="
+              data:image/gif;base64,R0lGODlhAQABAIAAAP///wAAACH5BAEAAAAALAAAAAABAAEAAAICRAEAOw==
+            "
+            media="(max-width: 639px)"
+          />
+          {{ if .Params.unsplash }}
+            <img
+              src="{{ .Params.unsplash }}&ixlib=rb-1.2.1&w=288&h=162&crop=entropy&cs=tinysrgb&fit=crop&q=85&auto=format&utm_source=unsplash_source&utm_medium=referral&utm_campaign=api-credit"
+              alt=""
+            />
             {{ else }}
-            <picture class="w-full h-full object-cover">
-              <source
-                srcset="
-                  data:image/gif;base64,R0lGODlhAQABAIAAAP///wAAACH5BAEAAAAALAAAAAABAAEAAAICRAEAOw==
-                "
-                media="(max-width: 639px)"
-              />
-              <img
-                src="https://images.weserv.nl?url={{ . }}&w=288&h=162&fit=cover&maxage=31d"
-                alt=""
-              />
-            </picture>
+            {{ with .Params.images }}
+              {{ range first 1 . }}
+                <img
+                  src="https://images.weserv.nl?url={{ . }}&w=288&h=162&fit=cover&maxage=31d"
+                  alt=""
+                />
+              {{ end }}
+            {{ end }}
           {{ end }}
-        {{ end }}
+        </picture>
       {{ end }}
     </div>
   </article>

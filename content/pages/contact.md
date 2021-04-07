@@ -2,6 +2,7 @@
 title: ติดต่อ
 author: LazyWasabi
 slug: contact
+center_title: true
 ---
 
 - Mastodon: [@lazywasabi@mastodon.social](https://mastodon.social/@lazywasabi)

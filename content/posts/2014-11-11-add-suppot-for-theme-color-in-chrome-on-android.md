@@ -4,6 +4,9 @@ author: LazyWasabi
 date: 2014-11-11T02:00:00+00:00
 lastmod: 2020-06-08
 slug: add-suppot-for-theme-color-in-chrome-on-android
+images:
+  - https://source.unsplash.com/46juD4zY1XA
+unsplash: https://images.unsplash.com/photo-1525909002-1b05e0c869d8?ixid=MXwxfDB8MXxhbGx8fHx8fHx8fA
 tags:
   - Web Dev
 ---

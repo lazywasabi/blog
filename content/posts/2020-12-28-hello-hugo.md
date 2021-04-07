@@ -6,7 +6,7 @@ slug: hello-hugo
 description: ทำไมถึงย้ายจาก WordPress มาใช้ Hugo และเลือกโฮสต์ระหว่าง Netlify กับ Vercel
 seo_title: ย้ายบล็อกจาก WordPress มาใช้ Hugo
 images:
-  - https://cdn.lazywasabi.net/blog/i/hugo-logo.png
+  - https://cdn.lazywasabi.net/blog/i/hugo.png
 tags:
   - Web Dev
   - Hugo

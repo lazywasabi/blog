@@ -19,7 +19,10 @@ module.exports = {
       },
       maxWidth: {
         site: '56rem',
-        content: '65ch',
+        content: '40rem',
+      },
+      width: {
+        'wide-image': 'calc(100% + 16rem)',
       },
       typography: (theme) => ({
         DEFAULT: {

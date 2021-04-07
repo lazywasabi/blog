@@ -102,6 +102,10 @@ img.emoji {
   @apply border-0;
 }
 
+.prose .wide img {
+  @apply lg:max-w-none lg:-ml-32 lg:w-wide-image;
+}
+
 .comment-content p:first-child {
   margin-top: 0 !important;
 }

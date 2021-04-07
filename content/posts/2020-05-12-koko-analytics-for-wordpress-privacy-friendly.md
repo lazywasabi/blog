@@ -25,7 +25,8 @@ comments:
 
 ## ทำอะไรได้บ้าง?
 
-![](https://cdn.lazywasabi.net/blog/i/koko-analytics-dashboard.png)
+![หน้าแดชบอร์ดของ Koko Analytics](https://cdn.lazywasabi.net/blog/i/koko-analytics-dashboard.png)
+{.wide}
 
 Koko Analytics มีจุดเด่นที่ความเรียบง่าย เร็ว และเป็นส่วนตัว ดังนั้นข้อมูลที่เก็บจะไม่เท่า Google Analytics หรือบริการเก็บสถิติอื่นๆ ข้อมูลที่เราจะได้จากปลั๊กอินนี้มีเพียง
 

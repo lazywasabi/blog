@@ -19,6 +19,7 @@ tags:
 จากนั้นวาง public key ของเราลงไป แล้วติ๊กที่ตัวเลือก "Use this public key to encrypt notification emails…"
 
 ![เมนูตั้งค่าเข้ารหัสอีเมลแจ้งเตือนจาก Facebook](https://cdn.lazywasabi.net/blog/i/facebook-encrypted-email-setting.png)
+{.wide}
 
 ก่อนกดบันทึกอ่านคำเตือนสักนิด เมื่อเปิดใช้งานตัวเลือกนี้ทุกอีเมลแจ้งเตือนจาก Facebook จะถูกเข้ารหัส รวมถึงอีเมลกู้คืนบัญชีเวลาลืมรหัสผ่านด้วยนะครับ ถ้าเข้าใจแล้วก็กดปุ่มบันทึกได้เลย
 

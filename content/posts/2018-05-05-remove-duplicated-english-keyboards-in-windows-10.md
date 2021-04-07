@@ -4,7 +4,7 @@ author: LazyWasabi
 date: 2018-05-05T02:00:00+00:00
 lastmod: 2020-08-07
 slug: remove-duplicated-english-keyboards-in-windows-10
-seo_title: ลบภาษาอังกฤษ UK ซ้ำใน Windows 10 %sep% %sitename%
+seo_title: ลบภาษาอังกฤษ UK ซ้ำใน Windows 10
 description: หลังจากอัปเดต Windows 10 แล้ว เวลาเปลี่ยนแป้นพิมพ์มีบั๊กภาษาอังกฤษซ้ำสองแบบ (US และ UK) บล็อกนี้จะมาบอกวิธีลบคีย์บอร์ดภาษาอังกฤษเกินใน Windows 10 ครับ
 images:
   - https://cdn.lazywasabi.net/blog/i/remove-duplicated-english-keyboards-in-windows-10.jpg

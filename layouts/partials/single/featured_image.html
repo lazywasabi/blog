@@ -1,7 +1,12 @@
+{{ $address := "https://source.unsplash.com" }}
 {{ with .Params.images }}
   {{ range first 1 . }}
     <div class="mt-4 md:mt-8">
-      <img src="{{ . | relURL }}" alt="{{ $.Title }}" loading="lazy" />
+      <img
+        src="{{ . | relURL }}{{ if hasPrefix . $address }}/1024x576{{ end }}"
+        alt="{{ $.Title }}"
+        loading="lazy"
+      />
     </div>
   {{ end }}
 {{ end }}

@@ -1,7 +1,7 @@
 {{ define "main" }}
-  <article class="{{ .Site.Params.content_margin }}">
-    <div>
-      <h1 class="{{ .Site.Params.title_font }}">
+  <article class="content-margin">
+    <div class="{{ if .Params.center_title }}text-center{{ end }}">
+      <h1 class="page-title">
         {{ .Title }}
       </h1>
       {{ if eq .Section "posts" }}
@@ -11,6 +11,8 @@
     </div>
     {{ partial "single/content.html" . }}
   </article>
-  {{ partial "single/share.html" . }}
-  {{ partial "single/mastodon-comments.html" . }}
+  <div class="max-w-content mx-auto">
+    {{ partial "single/share.html" . }}
+    {{ partial "single/mastodon_comments.html" . }}
+  </div>
 {{ end }}

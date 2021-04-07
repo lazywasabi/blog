@@ -1,11 +1,11 @@
 {{ if ne .Paginator.TotalPages 1 }}
   <div
-    class="flex pt-8 my-4 justify-between items-center content-center md:text-lg"
+    class="flex pt-8 my-4 justify-between items-center content-center md:text-xl"
   >
     <div class="flex-1">
       {{ if .Paginator.HasPrev }}
         <a
-          class="font-semibold text-theme-gray-900 hover:text-green-500 dark:hover:text-green-400"
+          class="font-medium text-theme-gray-900 hover:text-green-500 dark:hover:text-green-400"
           href="{{ .Paginator.Prev.URL }}"
         >
           ก่อนหน้า
@@ -18,7 +18,7 @@
     <div class="flex-1 text-right">
       {{ if .Paginator.HasNext }}
         <a
-          class="font-semibold text-theme-gray-900 hover:text-green-500 dark:hover:text-green-400"
+          class="font-medium text-theme-gray-900 hover:text-green-500 dark:hover:text-green-400"
           href="{{ .Paginator.Next.URL }}"
         >
           ถัดไป

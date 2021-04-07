@@ -3,7 +3,6 @@ const defaultTheme = require('tailwindcss/defaultTheme');
 
 module.exports = {
   purge: [
-    './config.toml',
     './assets/**/*.js',
     './layouts/**/*.html',
     './content/**/*.md',
@@ -19,6 +18,7 @@ module.exports = {
         display: ['"IBM Plex Sans Thai"', ...defaultTheme.fontFamily.sans],
       },
       maxWidth: {
+        site: '56rem',
         content: '65ch',
       },
       typography: (theme) => ({
@@ -36,7 +36,13 @@ module.exports = {
               fontWeight: '700',
             },
             h2: {
-              fontWeight: '600',
+              fontWeight: '500',
+            },
+            h3: {
+              fontWeight: '500',
+            },
+            h4: {
+              fontWeight: '500',
             },
             'a code': {
               color: theme('colors.green.500'),

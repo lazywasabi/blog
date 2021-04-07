@@ -4,10 +4,6 @@ title = "LazyWasabi"
 Paginate = 10
 rssLimit = 10
 
-[params]
-  content_margin = "mt-6 sm:mt-8 md:mt-12 lg:mt-16"
-  title_font = "text-2xl md:text-3xl lg:text-4xl font-semibold"
-
 [permalinks]
   posts = "/blog/:slug/"
   pages = "/:slug/"

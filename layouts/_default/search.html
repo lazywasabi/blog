@@ -1,0 +1,33 @@
+{{ define "main" }}
+  <article class="content-margin">
+    <div
+      class="mt-6 prose prose-green max-w-none font-sans md:mt-10 md:prose-lg dark:prose-dark"
+    >
+      <span class="block">พิมพ์คำที่ต้องการค้นหา แล้วกด ENTER</span>
+      <form class="mt-1" action="https://duckduckgo.com/" target="_blank">
+        <input
+          class="w-full p-4 rounded-lg border-2 border-gray-500 focus:outline-none focus:border-green-500 dark:bg-black dark:border-gray-600 dark:focus:border-green-500"
+          type="text"
+          name="q"
+          placeholder="ค้นหา..."
+          minlength="2"
+          maxlength="20"
+          autofocus
+          required
+        />
+        <input type="hidden" name="sites" value="lazywasabi.com" />
+      </form>
+      <div
+        class="mt-1.5 text-xs text-right font-display text-gray-500 dark:text-gray-400 lg:text-sm"
+      >
+        ค้นหาด้วย DuckDuckGo
+      </div>
+      <div class="mt-6">
+        <span class="block">หรือเลือกดูตามแท็ก:</span>
+        {{ range .Site.Taxonomies.tags.Alphabetical }}
+          <a class="mr-2" href="{{ .Page.Permalink }}">{{ .Page.Title }}</a>
+        {{ end }}
+      </div>
+    </div>
+  </article>
+{{ end }}

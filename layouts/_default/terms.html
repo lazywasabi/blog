@@ -1,9 +1,9 @@
 {{ define "main" }}
-  <div class="{{ .Site.Params.content_margin }}">
-    <h1 class="{{ .Site.Params.title_font }}">
+  <div class="content-margin">
+    <h1 class="page-title">
       {{ .Title }}
     </h1>
-    <div class="mt-4 md:mt-8">
+    <div class="mt-6 md:mt-10">
       {{ range .Pages.ByTitle }}
         <a class="mr-4" href="{{ .Permalink | relURL }}">
           <span

@@ -16,12 +16,12 @@
 
   @font-face {
     font-family: 'IBM Plex Sans Thai';
-    src: url('https://cdn.lazywasabi.net/fonts/IBMPlexSansThai/IBMPlexSansThai-SemiBold.woff2')
+    src: url('https://cdn.lazywasabi.net/fonts/IBMPlexSansThai/IBMPlexSansThai-Medium.woff2')
         format('woff2'),
-      url('https://cdn.lazywasabi.net/fonts/IBMPlexSansThai/IBMPlexSansThai-SemiBold.woff')
+      url('https://cdn.lazywasabi.net/fonts/IBMPlexSansThai/IBMPlexSansThai-Medium.woff')
         format('woff');
     font-style: normal;
-    font-weight: 600;
+    font-weight: 500;
     font-display: swap;
   }
 
@@ -68,6 +68,10 @@ img.emoji {
   vertical-align: -0.1em !important;
 }
 
+.content-margin {
+  @apply mt-6 sm:mt-8 md:mt-12 lg:mt-16 xl:mt-20;
+}
+
 .menu.active {
   @apply block fixed top-0 left-0 h-full w-full z-10;
 }
@@ -85,8 +89,13 @@ img.emoji {
   @apply bg-green-500 text-gray-100 dark:bg-green-800;
 }
 
+.page-title {
+  @apply font-normal text-3xl sm:text-4xl md:text-5xl lg:text-6xl;
+  line-height: 1.15;
+}
+
 .tag {
-  @apply inline-block mt-1 px-2 text-xs bg-gray-200 text-gray-600 border border-gray-300 rounded-full hover:bg-green-500 hover:text-white hover:border-green-700 dark:bg-gray-800 dark:text-gray-400 dark:border-gray-700 dark:hover:bg-green-500 dark:hover:text-white dark:hover:border-green-300 lg:text-sm focus:outline-none focus:ring-2 ring-green-500;
+  @apply inline-block mt-1 px-2 text-xs bg-gray-200 text-gray-600 border border-gray-300 rounded-full hover:bg-green-500 hover:text-white hover:border-green-700 dark:bg-gray-800 dark:text-gray-400 dark:border-gray-700 dark:hover:bg-green-500 dark:hover:text-white dark:hover:border-green-300 md:text-sm focus:outline-none focus:ring-2 ring-green-500;
 }
 
 .prose a.anchorjs-link:hover {

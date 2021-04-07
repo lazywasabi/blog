@@ -1,5 +1,5 @@
 {{ define "main" }}
-  <div class="{{ .Site.Params.content_margin }}">
+  <div class="content-margin">
     <svg
       xmlns="http://www.w3.org/2000/svg"
       class="w-48 h-48 mx-auto stroke-current"
@@ -17,8 +17,6 @@
       <path d="M14 11.5l3 -3" />
       <path d="M9.5 15a3.5 3.5 0 0 0 5 0" />
     </svg>
-    <h1 class="mt-8 {{ .Site.Params.title_font }} text-center">
-      ไม่พบหน้าเว็บ
-    </h1>
+    <h1 class="mt-8 page-title text-center">ไม่พบหน้าเว็บ</h1>
   </div>
 {{ end }}

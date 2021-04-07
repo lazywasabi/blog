@@ -58,7 +58,7 @@ function setTheme() {
 
 setTheme();
 
-function Paimon(e) {
+function autoChangeTheme(e) {
   if (localStorage.theme === 'auto' || !('theme' in localStorage)) {
     if (e.matches) {
       html.add('dark');
@@ -70,4 +70,4 @@ function Paimon(e) {
 
 window
   .matchMedia('(prefers-color-scheme: dark)')
-  .addEventListener('change', Paimon);
+  .addEventListener('change', autoChangeTheme);

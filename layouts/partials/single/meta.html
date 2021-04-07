@@ -1,4 +1,4 @@
-<div class="mt-2 text-xs text-gray-600 dark:text-gray-400 md:mt-3 md:text-sm">
+<div class="mt-2 text-xs text-gray-600 dark:text-gray-400 md:mt-3 md:text-base">
   <span class="mr-1">🕒</span>
   {{ if ne .Lastmod .Date }}
     อัปเดตล่าสุด:
@@ -12,7 +12,9 @@
     {{ .Date.Format "Jan 2, 2006" }}
   </time>
 </div>
-<div class="flex flex-wrap items-center space-x-1 md:mt-1">
+<div
+  class="flex flex-wrap items-center space-x-1 md:mt-1{{ if .Params.center_title }} justify-center{{ end }}"
+>
   🏷️
   {{ range .Params.tags }}
     <a

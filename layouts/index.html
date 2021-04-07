@@ -1,18 +1,20 @@
 {{ define "main" }}
-  <div class="{{ .Site.Params.content_margin }}">
-    <div class="flex justify-between items-center mt-4">
-      <h2 class="flex-initial {{ .Site.Params.title_font }}">บล็อกล่าสุด</h2>
-      <a
-        href="/blog/"
-        class="flex-initial inline-block px-4 py-2 text-sm font-semibold bg-green-500 text-white rounded hover:bg-green-600 focus:outline-none focus:ring sm:text-base"
-      >
-        ดูทั้งหมด
-      </a>
+  <div class="content-margin">
+    <div>
+      <h2 class="page-title">บล็อกล่าสุด</h2>
     </div>
-    <div class="mt-4 space-y-6 md:mt-8 md:space-y-10">
+    <div class="mt-6 space-y-6 md:mt-10 md:space-y-10">
       {{ range first 3 ( where .Site.RegularPages "Section" "posts" ) }}
         {{ partial "list/article.html" . }}
       {{ end }}
+    </div>
+    <div class="flex justify-center content-margin">
+      <a
+        href="/blog/"
+        class="px-4 py-2 text-sm font-medium bg-green-500 text-white rounded hover:bg-green-600 focus:outline-none focus:ring sm:text-base md:text-xl"
+      >
+        ดูทั้งหมด
+      </a>
     </div>
   </div>
 {{ end }}

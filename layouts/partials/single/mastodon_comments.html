@@ -1,9 +1,9 @@
 {{ with .Params.comments }}
   <div id="comments" class="mt-6 md:mt-8">
     <div class="flex space-x-2 items-baseline">
-      <h2 class="text-2xl font-semibold md:text-3xl">ความคิดเห็น</h2>
+      <h2 class="text-2xl font-medium md:text-3xl">ความคิดเห็น</h2>
       <a
-        class="link font-semibold md:text-lg"
+        class="link font-medium md:text-lg"
         href="https://{{ .host }}/interact/{{ .id }}?type=reply"
         target="_blank"
         rel="noopener noreferrer"
@@ -74,7 +74,7 @@
                      <div class="w-full overflow-hidden">
                        <div class="flex justify-between items-center space-x-2">
                          <a class="truncate" href="${reply.account.url}" target="_blank" rel="noopener noreferrer">
-                           <span class="font-semibold">${reply.account.display_name}</span>
+                           <span class="font-medium">${reply.account.display_name}</span>
                            <span class="text-sm text-gray-600 dark:text-gray-400 md:text-base">${escapeHtml(reply.account.acct)}</span>
                          </a>
                          <a class="whitespace-nowrap" href="${reply.uri}" target="_blank" rel="noopener noreferrer">

@@ -4,6 +4,9 @@ title = "LazyWasabi"
 Paginate = 10
 rssLimit = 10
 
+[params]
+  description = "LazyWasabi's Blog"
+
 [permalinks]
   posts = "/blog/:slug/"
   pages = "/:slug/"

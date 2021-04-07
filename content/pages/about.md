@@ -34,3 +34,5 @@ CDN โฮสต์ไฟล์สำหรับเว็บไซต์ผม 
 - ปุ่มแชร์ใช้ [Web Share API](/blog/share-button-with-web-share-api/)
 - แสดงไอคอนลิงก์หัวข้อด้วย [AnchorJS](https://www.bryanbraun.com/anchorjs/)
 - ระบบแสดงความคิดเห็นใช้ [Mastodon](/blog/hugo-mastodon-comments/)
+- ใช้ [Images.weserv.nl](https://images.weserv.nl/) แสดงรูปขนาดเล็ก
+- โหลดรูปจาก Unsplash ด้วย [Unsplash Source](https://source.unsplash.com/)

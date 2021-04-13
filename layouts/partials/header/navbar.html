@@ -59,12 +59,14 @@
         class="flex flex-col text-xl space-y-4 sm:text-2xl sm:text-center lg:flex-row lg:space-y-0 lg:space-x-4 lg:text-base"
       >
         {{ range .Site.Menus.main }}
-          <a
-            class="hover:text-green-500 dark:hover:text-green-400"
-            href="{{ .URL }}"
-          >
-            <span>{{ .Name | safeHTML }}</span>
-          </a>
+          <div {{ with .Params.class }}class="{{ . }}"{{ end }}>
+            <a
+              class="hover:text-green-500 dark:hover:text-green-400"
+              href="{{ .URL }}"
+            >
+              <span>{{ .Name | safeHTML }}</span>
+            </a>
+          </div>
         {{ end }}
         <button
           class="hidden lg:block focus:outline-none focus:ring"

@@ -16,25 +16,32 @@ rssLimit = 10
 
 [menu]
   [[menu.main]]
+    name = "หน้าแรก"
+    pre = "📝"
+    url = "/"
+    weight = 1
+    [menu.main.params]
+      class = "lg:hidden"
+  [[menu.main]]
     name = "บล็อก"
     pre = "📝"
     url = "/blog/"
-    weight = 1
+    weight = 2
   [[menu.main]]
     name = "เกี่ยวกับ"
     pre = "🍣"
     url = "/about/"
-    weight = 2
+    weight = 3
   [[menu.main]]
     name = "เสียงนำทางไทย ETS2/ATS"
     pre = "🚚"
     url = "/ets2thainav/"
-    weight = 3
+    weight = 4
   [[menu.main]]
     name = "ติดต่อ"
     pre = "📧"
     url = "/contact/"
-    weight = 4
+    weight = 5
 
 [markup]
   [markup.goldmark]

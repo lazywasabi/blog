@@ -1,4 +1,11 @@
 {
+  "trailingSlash": true,
+  "redirects": [
+    {
+      "source": "/blog/koko-analytics/",
+      "destination": "/blog/koko-analytics-for-wordpress-privacy-friendly/"
+    }
+  ],
   "github": {
     "silent": true
   }

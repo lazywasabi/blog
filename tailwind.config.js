@@ -34,6 +34,9 @@ module.exports = {
                 borderBottom: '1px solid currentColor',
               },
             },
+            code: {
+              wordBreak: 'break-all',
+            },
             strong: {
               color: 'inherit',
               fontWeight: '700',

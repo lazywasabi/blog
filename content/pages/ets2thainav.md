@@ -3,7 +3,7 @@ title: เสียงนำทางภาษาไทยสำหรับเ�
 author: LazyWasabi
 slug: ets2thainav
 images:
-  - https://cdn.lazywasabi.net/blog/i/thai-voice-navigation-cover-black-sea-istanbul.jpg
+  - https://cdn.lazywasabi.net/blog/i/ets2thainav-cover-black-sea-istanbul.jpg
 ---
 
 **เมนู:**

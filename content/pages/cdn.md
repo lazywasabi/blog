@@ -30,18 +30,28 @@ CDN นี้ทำขึ้นเพื่อใช้ในเว็บไซ�
 
 ## Emoji CDN 😀 {#emoji}
 
-_อัปเดตล่าสุด: 13 มี.ค. 2564 ([v13.0.2](https://github.com/twitter/twemoji/releases/tag/v13.0.2))_
+_อัปเดตล่าสุด: 29 พ.ค. 2564 ([v13.1.0](https://github.com/twitter/twemoji/releases/tag/v13.1.0))_
 
 [Twemoji](https://github.com/twitter/twemoji) เวอร์ชันล่าสุด รองรับเฉพาะภาพ SVG เท่านั้น แคช 1 เดือน
 
-รูปภาพ emoji: `https://cdn.lazywasabi.net/emoji/latest/svg/*` ([ตัวอย่าง](https://cdn.lazywasabi.net/emoji/latest/svg/1f600.svg))
+รูปภาพ emoji: `https://cdn.lazywasabi.net/emoji/latest/svg/*.svg` ([ตัวอย่าง](https://cdn.lazywasabi.net/emoji/latest/svg/1f600.svg))
 
-ไฟล์ JS: `https://cdn.lazywasabi.net/emoji/latest/twemoji.min.js` ปรับแต่งให้โหลดรูปจาก cdn.lazywasabi.net แค่ใส่โค้ดด้านล่างนี้ในเว็บแล้วใช้งานได้เลย
+ไฟล์ JS: `https://cdn.lazywasabi.net/emoji/13.1.0/twemoji.min.js`
+
+ตัวอย่างโค้ดสำหรับเว็บไซต์ ใส่โค้ดด้านล่างนี้ในเว็บแล้วใช้งานได้เลย
 
 ```html
-<script src="https://cdn.lazywasabi.net/emoji/latest/twemoji.min.js"></script>
+<script
+  src="https://cdn.lazywasabi.net/emoji/13.1.0/twemoji.min.js"
+  integrity="sha256-Dg5SWeP/jqgF4MVmDGM29/RrFDMuPK+4KTnh2z2otvg="
+  crossorigin="anonymous"
+></script>
 <script>
-  twemoji.parse(document.body);
+  twemoji.parse(document.body, {
+    base: 'https://cdn.lazywasabi.net/emoji/latest/',
+    folder: 'svg',
+    ext: '.svg',
+  });
 </script>
 ```
 

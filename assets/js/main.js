@@ -1,4 +1,8 @@
-twemoji.parse(document.body);
+twemoji.parse(document.body, {
+  base: 'https://cdn.lazywasabi.net/emoji/latest/',
+  folder: 'svg',
+  ext: '.svg',
+});
 
 function toggleMenu() {
   document.querySelector('.menu').classList.toggle('active');

@@ -2,12 +2,14 @@ const colors = require('tailwindcss/colors');
 const defaultTheme = require('tailwindcss/defaultTheme');
 
 module.exports = {
-  purge: [
-    './assets/**/*.js',
-    './layouts/**/*.html',
-    './content/**/*.md',
-    './content/**/*.html',
-  ],
+  purge: {
+    content: [
+      './layouts/**/*.html',
+      './content/**/*.md',
+      './content/**/*.html',
+    ],
+    safelist: ['overflow-hidden', 'lg:hidden', 'hidden'],
+  },
   darkMode: 'class', // or 'media' or 'class'
   theme: {
     extend: {

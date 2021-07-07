@@ -10,7 +10,7 @@
         >แสดงความคิดเห็น</a
       >
     </div>
-    <p class="mt-2 font-sans prose prose-green dark:prose-dark md:prose-lg">
+    <p class="mt-2 font-body prose prose-green dark:prose-dark md:prose-lg">
       ใช้บัญชี Mastodon หรือ Fediverse ตอบกลับ<a
         href="https://{{ .host }}/@{{ .username }}/{{ .id }}"
         target="_blank"
@@ -62,7 +62,7 @@
                     `<img src="${escapeHtml(emoji.static_url)}" alt="Emoji ${emoji.shortcode}" height="20" width="20" />`);
                 });
                 if (reply.media_attachments[0] !== undefined) {
-                  attachmentsLink = '<div class="font-sans prose prose-green dark:prose-dark"><a class="text-sm md:text-base" href="' + reply.uri + '" target="_blank" rel="noopener noreferrer">🔗 ดูไฟล์แนบ</a></div>';
+                  attachmentsLink = '<div class="font-body prose prose-green dark:prose-dark"><a class="text-sm md:text-base" href="' + reply.uri + '" target="_blank" rel="noopener noreferrer">🔗 ดูไฟล์แนบ</a></div>';
                 } else {
                   attachmentsLink = '';
                 }
@@ -85,7 +85,7 @@
                           </span>
                          </a>
                        </div>
-                       <div class="comment-content mt-1 font-sans prose prose-green dark:prose-dark md:prose-lg">${reply.content}</div>
+                       <div class="comment-content mt-1 font-body prose prose-green dark:prose-dark md:prose-lg">${reply.content}</div>
                        ${attachmentsLink}
                      </div>
                    </div>`;
@@ -93,7 +93,7 @@
                 twemoji.parse(document.body);
               });
           } else {
-            document.getElementById('mastodon-comments-list').innerHTML = "<p class=\"font-sans prose dark:prose-dark md:prose-lg\">ยังไม่มีความคิดเห็น</p>";
+            document.getElementById('mastodon-comments-list').innerHTML = "<p class=\"font-body prose dark:prose-dark md:prose-lg\">ยังไม่มีความคิดเห็น</p>";
           }
         });
       });

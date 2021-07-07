@@ -18,6 +18,7 @@ module.exports = {
       },
       fontFamily: {
         display: ['"IBM Plex Sans Thai"', ...defaultTheme.fontFamily.sans],
+        body: ['"Chulabhorn Likit Text"', ...defaultTheme.fontFamily.sans],
       },
       maxWidth: {
         site: '56rem',

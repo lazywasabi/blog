@@ -60,7 +60,7 @@ images:
 
 ### ดาวน์โหลดโดยตรง {#download-direct}
 
-สำหรับผู้ที่ไม่ได้ซื้อเกมผ่าน Steam สามารถดาวน์โหลดไฟล์ม็อดได้โดยตรง **ทั้งสองเกมใช้ไฟล์ม็อดเดียวกัน**
+สำหรับผู้ที่ต้องการดาวน์โหลดไฟล์ม็อดได้โดยตรง สามารถดาวน์โหลดม็อดเวอร์ชันล่าสุดได้ด้านล่างนี้ หรือที่ [GitHub](https://github.com/lazywasabi/ets2-thai-navigation/releases) **ทั้งสองเกมใช้ไฟล์ม็อดเดียวกัน**
 
 [⬇ สำหรับเกมเวอร์ชัน 1.37 - 1.41](https://github.com/lazywasabi/ets2-thai-navigation/releases/download/v4.0.1/thai-navigation-4.0.1.scs)
 

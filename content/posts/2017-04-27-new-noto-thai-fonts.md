@@ -2,7 +2,7 @@
 title: ลองใช้ฟอนต์ Noto Thai เวอร์ชันใหม่
 author: LazyWasabi
 date: 2017-04-27T02:00:00+00:00
-lastmod: 2020-08-21
+lastmod: 2021-07-07
 slug: new-noto-thai-fonts
 images:
   - https://cdn.lazywasabi.net/blog/i/noto-thai-fonts.jpg
@@ -54,7 +54,7 @@ tags:
 - [ดาวน์โหลดฟอนต์ Noto Sans Thai](https://www.google.com/get/noto/#sans-thai)
 - [ดาวน์โหลดฟอนต์ Noto Serif Thai](https://www.google.com/get/noto/#serif-thai)
 
-และสำหรับคนทำเว็บ ผมแปลงตัว Regular เป็นเว็บฟอนต์ WOFF และ WOFF2 ไว้ 2 น้ำหนัก (ธรรมดาและหนา) เพื่อนำมาใช้กับบล็อกนี้ ถ้าต้องการใช้งานก็ดาวน์โหลดไปได้เลยครับ (แปลงไฟล์ด้วยเว็บ [Transfonter](https://transfonter.org/))
+และสำหรับคนทำเว็บ ผมแปลงเป็นเว็บฟอนต์ WOFF และ WOFF2 (ด้วยเว็บ [Transfonter](https://transfonter.org/)) ไว้เรียบร้อย ดาวน์โหลดได้ด้านล่างนี้เลย หรือถ้าไม่อยากโฮสต์เอง สามารถใช้งานผ่าน [CDN](/cdn/) ของผมได้เลยครับ (มีฟอนต์อื่นๆ นอกจากสองฟอนต์นี้ด้วยนะ)
 
 [NotoSansThai.zip](https://cdn.lazywasabi.net/fonts/NotoSansThai/NotoSansThai.zip) (เว็บฟอนต์)
 

@@ -18,15 +18,18 @@ CDN นี้ทำขึ้นเพื่อใช้ในเว็บไซ�
 
 ฟอนต์ภาษาไทยที่ส่วนใหญ่ไม่มีใน Google Fonts แคช 1 ปี มีฟอนต์ที่ใช้ได้ดังนี้
 
+- Anakotmai
+- Chulabhorn Likit
 - Droid Sans Thai
 - IBM Plex Sans Thai
 - IBM Plex Sans Thai Looped
-- Loma
 - Noto Sans Thai
 - Noto Serif Thai
 - Sarabun
+- ฟอนต์จาก Fonts-TLWG
 
-[ข้อมูลเพิ่มเติม และวิธีใช้งาน ↗](https://lazywasabi.gitbook.io/cdn/fonts)
+[ดูวิธีใช้งาน ↗](https://lazywasabi.gitbook.io/cdn/fonts/getting-started)
+{class="font-bold text-xl font-display"}
 
 ## Emoji CDN 😀 {#emoji}
 
@@ -34,29 +37,12 @@ _อัปเดตล่าสุด: 29 พ.ค. 2564 ([v13.1.0](https://githu
 
 [Twemoji](https://github.com/twitter/twemoji) เวอร์ชันล่าสุด รองรับเฉพาะภาพ SVG เท่านั้น แคช 1 เดือน
 
-รูปภาพ emoji: `https://cdn.lazywasabi.net/emoji/latest/svg/*.svg` ([ตัวอย่าง](https://cdn.lazywasabi.net/emoji/latest/svg/1f600.svg))
-
-ไฟล์ JS: `https://cdn.lazywasabi.net/emoji/13.1.0/twemoji.min.js`
-
-ตัวอย่างโค้ดสำหรับเว็บไซต์ ใส่โค้ดด้านล่างนี้ในเว็บแล้วใช้งานได้เลย
-
-```html
-<script
-  src="https://cdn.lazywasabi.net/emoji/13.1.0/twemoji.min.js"
-  integrity="sha256-Dg5SWeP/jqgF4MVmDGM29/RrFDMuPK+4KTnh2z2otvg="
-  crossorigin="anonymous"
-></script>
-<script>
-  twemoji.parse(document.body, {
-    base: 'https://cdn.lazywasabi.net/emoji/latest/',
-    folder: 'svg',
-    ext: '.svg',
-  });
-</script>
-```
+[ดูวิธีใช้งาน ↗](https://lazywasabi.gitbook.io/cdn/emoji)
+{class="font-bold text-xl font-display"}
 
 ## ข้อมูลเพิ่มเติม {#info}
 
-[ดู LazyWasabi CDN บน GitBook ↗](https://lazywasabi.gitbook.io/cdn/)
+[LazyWasabi CDN บน GitBook ↗](https://lazywasabi.gitbook.io/cdn/)
+{class="font-bold font-display"}
 
 หากพบปัญหาในการใช้งาน ดูวิธีติดต่อผมได้ที่หน้า[ติดต่อ]({{< ref "contact" >}})

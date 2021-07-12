@@ -1,4 +1,4 @@
 node_modules/
 /public/
 /resources/_gen/
-*.code-workspace
+/assets/css/main.css

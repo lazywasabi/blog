@@ -1,18 +1,18 @@
 <!-- CSS -->
-{{ $styles := resources.Get "css/main.css" }}
-{{ $styles = $styles | resources.PostCSS (dict "inlineImports" true) }}
+{{ $css := resources.Get "css/main.css" }}
 
 {{ if hugo.IsProduction }}
-  {{ $styles = $styles | minify | fingerprint }}
+  {{ $css = $css | fingerprint }}
   <link
     rel="stylesheet"
-    href="{{ $styles.Permalink | relURL }}"
-    integrity="{{ $styles.Data.Integrity }}"
+    href="{{ $css.Permalink | relURL }}"
+    integrity="{{ $css.Data.Integrity }}"
     crossorigin="anonymous"
   />
-  {{ else }}
-  <link rel="stylesheet" href="{{ $styles.Permalink | relURL }}" />
+{{ else }}
+  <link rel="stylesheet" href="{{ $css.Permalink | relURL }}" />
 {{ end }}
+
 
 <!-- JavaScript -->
 {{ $headJS := resources.Get "js/head.js" }}

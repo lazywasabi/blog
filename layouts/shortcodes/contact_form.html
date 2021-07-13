@@ -1,0 +1,69 @@
+<div
+  hidden
+  class="sent-message rounded mb-6 p-4 bg-green-500 text-white font-display font-medium text-xl"
+>
+  ส่งข้อความแล้ว
+</div>
+<form
+  class="space-y-4 font-display"
+  name="contact"
+  method="POST"
+  action="/contact/?sent=success"
+  netlify
+>
+  <div>
+    <label class="inline-block" for="name">ชื่อ</label>
+    <input
+      class="input w-full"
+      type="text"
+      name="name"
+      id="name"
+      maxlength="80"
+      required
+    />
+  </div>
+  <div>
+    <label class="inline-block" for="email">อีเมล</label>
+    <input
+      class="input w-full"
+      type="email"
+      name="email"
+      id="email"
+      minlength="6"
+      maxlength="60"
+      required
+    />
+  </div>
+  <div>
+    <label class="inline-block" for="message">ข้อความ</label>
+    <textarea
+      class="input w-full"
+      name="message"
+      id="message"
+      rows="6"
+      minlength="10"
+      maxlength="2000"
+      required
+    ></textarea>
+  </div>
+  <div class="text-sm font-body md:text-base">
+    <p>
+      เมื่อคุณกดปุ่มส่งข้อความ ข้อมูลในแบบฟอร์มนี้จะถูกประมวลผลและจัดเก็บโดย
+      <a
+        href="https://www.netlify.com/privacy"
+        target="_blank"
+        rel="noopener noreferrer nofollow"
+        >Netlify</a
+      >
+    </p>
+  </div>
+  <div>
+    <button class="button text-lg" type="submit">ส่งข้อความ</button>
+  </div>
+</form>
+
+<script>
+  if (new URL(window.location.href).searchParams.get('sent') === 'success') {
+    document.querySelector('.sent-message').removeAttribute('hidden');
+  }
+</script>

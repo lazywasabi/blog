@@ -136,6 +136,9 @@ img.emoji {
   @apply text-green-600 border-b border-transparent hover:border-current dark:text-green-400;
 }
 
+.input {
+  @apply block p-2 bg-white font-body rounded border border-gray-400 focus:outline-none focus:ring focus:ring-green-500 focus:border-green-500 dark:bg-black dark:text-gray-100 dark:border-gray-500 dark:focus:border-green-500;
+}
 
 .button {
   @apply inline-block px-4 py-2 font-display bg-green-500 text-white rounded hover:bg-green-600 focus:outline-none focus:ring dark:bg-green-600 dark:hover:bg-green-500;

@@ -1,0 +1,12 @@
+[build]
+publish = "public"
+command = "npm run build"
+
+[build.environment]
+  NODE_VERSION = "14"
+  HUGO_VERSION = "0.58.0"
+
+[[redirects]]
+  from = "/blog/koko-analytics/"
+  to = "/blog/koko-analytics-for-wordpress-privacy-friendly/"
+  status = 301

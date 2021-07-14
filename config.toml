@@ -1,8 +1,9 @@
 baseURL = "https://lazywasabi.com/"
-languageCode = "en-us"
+languageCode = "th"
 title = "LazyWasabi"
 Paginate = 10
 rssLimit = 10
+enableRobotsTXT = true
 
 [params]
   description = "LazyWasabi's Blog"

@@ -15,7 +15,7 @@ CDN โฮสต์ไฟล์สำหรับเว็บไซต์ผม 
 รวมภาพเรดาร์ตรวจอากาศทั่วประเทศไทย พร้อมข้อมูลอื่นๆ
 
 **[📰 THAI TECH FEED](https://twitter.com/thaitechfeed)**  
-ข่าวเทคโนโลยีจากเว็บไซต์คุณภาพ อัปเดตตลอต 24 ชั่วโมงผ่าน Twitter และ Mastodon
+ข่าวเทคโนโลยีจากเว็บไซต์คุณภาพ อัปเดตตลอต 24 ชั่วโมงผ่าน [Twitter](https://twitter.com/thaitechfeed) และ [Mastodon](https://mastodon.in.th/@thaitechfeed)
 
 ---
 
@@ -23,12 +23,12 @@ CDN โฮสต์ไฟล์สำหรับเว็บไซต์ผม 
 
 - ซอร์สโค้ดอยู่บน [GitHub](https://github.com/lazywasabi/blog)
 - สร้างด้วย [Hugo](https://gohugo.io/)
-- โฮสต์บน [Vercel](https://vercel.com/)
+- โฮสต์บน [Netlify](https://www.netlify.com/)
 - ใช้ [Tailwind CSS](https://tailwindcss.com) สร้างธีม
-  - ประมวลผลผ่าน [Hugo Pipes](https://gohugo.io/hugo-pipes/introduction/)
   - ใช้ปลั๊กอิน [@tailwindcss/typography](https://github.com/tailwindlabs/tailwindcss-typography)
   - ธีมสีมืดใช้ [Dark Mode ของ Tailwind CSS](https://tailwindcss.com/docs/dark-mode)
-- ฟอนต์หลักคือ [IBM Plex Sans Thai](https://www.ibm.com/plex/)
+- ฟอนต์หัวเรื่องคือ [IBM Plex Sans Thai](https://www.ibm.com/plex/)
+- ฟอนต์เนื้อหาคือ [จุฬาภรณ์ลิขิต](https://cadsondemak.com/cra/)
 - ไอคอนจาก [Tabler Icons](https://tablericons.com)
 - ใช้ [Twemoji](https://github.com/twitter/twemoji/) แสดงอิโมจิ
 - ปุ่มแชร์ใช้ [Web Share API](/blog/share-button-with-web-share-api/)

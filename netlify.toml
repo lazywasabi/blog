@@ -11,11 +11,8 @@ command = "npm run build"
   to = "/blog/koko-analytics-for-wordpress-privacy-friendly/"
   status = 301
 
-[[headers]]
-  for = "/*"
-  [headers.values]
-    cache-control = '''
-    public,
-    max-age=0,
-    s-maxage=2592000,
-    must-revalidate'''
+[[redirects]]
+  from = "https://lazywasabi.netlify.app/*"
+  to = "https://lazywasabi.com/:splat"
+  status = 301
+  force = true

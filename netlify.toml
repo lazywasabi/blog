@@ -10,3 +10,12 @@ command = "npm run build"
   from = "/blog/koko-analytics/"
   to = "/blog/koko-analytics-for-wordpress-privacy-friendly/"
   status = 301
+
+[[headers]]
+  for = "/*"
+  [headers.values]
+    cache-control = '''
+    public,
+    max-age=0,
+    s-maxage=2592000,
+    must-revalidate'''

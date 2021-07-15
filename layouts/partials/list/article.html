@@ -11,6 +11,10 @@
     </div>
     <div class="hidden sm:block sm:w-64 sm:h-36">
       {{ if .Params.images }}
+        {{ $images := index .Params.images 0 }}
+        {{ if strings.HasPrefix $images "https://source.unsplash.com" }}
+          {{ $images = print $images "/880x495" }}
+        {{ end }}
         <picture class="w-full h-full object-cover">
           <source
             srcset="
@@ -18,21 +22,10 @@
             "
             media="(max-width: 639px)"
           />
-          {{ if .Params.unsplash }}
-            <img
-              src="{{ .Params.unsplash }}&ixlib=rb-1.2.1&w=288&h=162&crop=entropy&cs=tinysrgb&fit=crop&q=85&auto=format&utm_source=unsplash_source&utm_medium=referral&utm_campaign=api-credit"
-              alt=""
-            />
-            {{ else }}
-            {{ with .Params.images }}
-              {{ range first 1 . }}
-                <img
-                  src="https://images.weserv.nl?url={{ . }}&w=288&h=162&fit=cover&maxage=31d"
-                  alt=""
-                />
-              {{ end }}
-            {{ end }}
-          {{ end }}
+          <img
+            src="https://images.weserv.nl?url={{ $images }}&w=288&h=162&fit=cover&maxage=31d"
+            alt=""
+          />
         </picture>
       {{ end }}
     </div>

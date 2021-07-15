@@ -1,15 +1,9 @@
-<div class="mt-4 md:mt-8">
-  {{ if .Params.unsplash }}
-    <img
-      src="{{ .Params.unsplash }}&ixlib=rb-1.2.1&w=1024&h=576&crop=entropy&cs=tinysrgb&fit=crop&q=85&auto=format&utm_source=unsplash_source&utm_medium=referral&utm_campaign=api-credit"
-      alt="{{ $.Title }}"
-      loading="lazy"
-    />
-    {{ else }}
-    {{ with .Params.images }}
-      {{ range first 1 . }}
-        <img src="{{ . | relURL }}" alt="{{ $.Title }}" loading="lazy" />
-      {{ end }}
-    {{ end }}
+{{ if .Params.images }}
+  {{ $images := index .Params.images 0 }}
+  {{ if hasPrefix $images "https://source.unsplash.com" }}
+    {{ $images = print $images "/880x495" }}
   {{ end }}
-</div>
+  <div class="mt-4 md:mt-8">
+    <img src="{{ $images }}" alt="{{ .Title }}" loading="lazy" />
+  </div>
+{{ end }}

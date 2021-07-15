@@ -120,10 +120,6 @@ img.emoji {
   @apply inline-block mt-1 px-2 text-xs bg-gray-200 text-gray-600 border border-gray-300 rounded-full hover:bg-green-500 hover:text-white hover:border-green-700 dark:bg-gray-800 dark:text-gray-400 dark:border-gray-700 dark:hover:bg-green-500 dark:hover:text-white dark:hover:border-green-300 md:text-sm focus:outline-none focus:ring-2 ring-green-500;
 }
 
-.prose a.anchorjs-link:hover {
-  @apply border-0;
-}
-
 .prose .wide img {
   @apply lg:max-w-none lg:-ml-32 lg:w-wide-image;
 }

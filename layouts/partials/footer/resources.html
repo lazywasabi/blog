@@ -4,18 +4,6 @@
 {{ $mainJS = slice $mainJS $themeJS | resources.Concat "js/main.js" | minify | fingerprint }}
 
 <script
-  src="https://cdn.lazywasabi.net/libs/anchor-js/4.3.1/anchor.min.js"
-  integrity="sha256-0WMZ9PF4b2hTF66Eglv/9H5Vwk6lnOG4AbmCJxo96WQ="
-  crossorigin="anonymous"
-></script>
-<script>
-  anchors.options = {
-    placement: 'left',
-    icon: '#',
-  };
-  anchors.add('.prose h2, .prose h3, .prose h4');
-</script>
-<script
   defer
   src="https://cdn.lazywasabi.net/emoji/13.1.0/twemoji.min.js"
   integrity="sha256-Dg5SWeP/jqgF4MVmDGM29/RrFDMuPK+4KTnh2z2otvg="

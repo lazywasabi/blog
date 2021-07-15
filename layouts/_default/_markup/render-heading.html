@@ -1,0 +1,6 @@
+<h{{ .Level }} class="group" id="{{ .Anchor | safeURL }}">
+  {{ .Text | safeHTML }}<a
+    class="pl-1.5 opacity-0 after:content-['#'] group-hover:opacity-100 hover:!border-0"
+    href="#{{ .Anchor | safeURL }}"
+  ></a>
+</h{{ .Level }}>

@@ -2,8 +2,8 @@
   "name": "lazywasabi.com",
   "description": "LazyWasabi Blog",
   "scripts": {
-    "dev": "cross-env NODE_ENV=development npx tailwindcss -i ./assets/css/tailwind/main.css -o ./assets/css/main.css --postcss --watch",
-    "build": "cross-env NODE_ENV=production npx tailwindcss -i ./assets/css/tailwind/main.css -o ./assets/css/main.css --postcss --minify && hugo"
+    "dev": "cross-env NODE_ENV=development npx tailwindcss -i ./assets/css/tailwind/main.css -o ./assets/css/main.css --watch",
+    "build": "cross-env NODE_ENV=production npx tailwindcss -i ./assets/css/tailwind/main.css -o ./assets/css/main.css --minify && hugo"
   },
   "repository": {
     "type": "git",

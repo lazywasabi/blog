@@ -1,8 +1,9 @@
 ---
 title: เกี่ยวกับ
-author: LazyWasabi
 slug: about
+author: LazyWasabi
 center_title: true
+"center_title:": true
 ---
 
 **[🚚 ETS2 Thai Navigation](/ets2thainav/)**
@@ -24,6 +25,8 @@ CDN โฮสต์ไฟล์สำหรับเว็บไซต์ผม 
 - ซอร์สโค้ดอยู่บน [GitHub](https://github.com/lazywasabi/blog)
 - สร้างด้วย [Hugo](https://gohugo.io/)
 - โฮสต์บน [Netlify](https://www.netlify.com/)
+- จัดการเนื้อหาด้วย [Netlify CMS](https://www.netlifycms.org/)
+- ฟอร์มติดต่อใช้ [Netlify Forms](https://www.netlify.com/products/forms/)
 - ใช้ [Tailwind CSS](https://tailwindcss.com) สร้างธีม
   - ใช้ปลั๊กอิน [@tailwindcss/typography](https://github.com/tailwindlabs/tailwindcss-typography)
   - ธีมสีมืดใช้ [Dark Mode ของ Tailwind CSS](https://tailwindcss.com/docs/dark-mode)
@@ -33,6 +36,6 @@ CDN โฮสต์ไฟล์สำหรับเว็บไซต์ผม 
 - ใช้ [Twemoji](https://github.com/twitter/twemoji/) แสดงอิโมจิ
 - ปุ่มแชร์ใช้ [Web Share API](/blog/share-button-with-web-share-api/)
 - แสดงไอคอนลิงก์หัวข้อด้วย [AnchorJS](https://www.bryanbraun.com/anchorjs/)
-- ระบบแสดงความคิดเห็นใช้ [Mastodon](/blog/hugo-mastodon-comments/)
-- ใช้ [Images.weserv.nl](https://images.weserv.nl/) แสดงรูปขนาดเล็ก
+- ใช้ [Mastodon](/blog/hugo-mastodon-comments/) ทำระบบแสดงความคิดเห็น
+- แสดงรูปขนาดเล็กผ่าน [Images.weserv.nl](https://images.weserv.nl/)
 - โหลดรูปจาก Unsplash ด้วย [Unsplash Source](https://source.unsplash.com/)

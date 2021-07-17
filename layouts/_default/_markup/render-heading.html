@@ -1,4 +1,4 @@
-<h{{ .Level }} class="group" id="{{ .Anchor | safeURL }}">
+<h{{ .Level }} tabindex="-1" class="group focus:outline-none" id="{{ .Anchor | safeURL }}">
   {{ .Text | safeHTML }}<a
     class="pl-2 opacity-0 after:content-['#'] focus:opacity-100 group-hover:opacity-100 hover:!border-0"
     href="#{{ .Anchor | safeURL }}"

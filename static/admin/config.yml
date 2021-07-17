@@ -1,10 +1,7 @@
 backend:
-  name: github
-  repo: lazywasabi/blog
+  name: git-gateway
   branch: main
-  cms_label_prefix: cms/
   squash_merges: true
-  use_graphql: true
 
 publish_mode: editorial_workflow
 media_folder: 'static/uploads'

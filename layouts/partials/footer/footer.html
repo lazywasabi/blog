@@ -4,4 +4,10 @@
   {{ partial "footer/links.html" . }}
   {{ partial "footer/top.html" . }}
 </div>
+{{ if .IsHome }}
+  <script
+    defer
+    src="https://identity.netlify.com/v1/netlify-identity-widget.js"
+  ></script>
+{{ end }}
 {{ partial "footer/resources.html" . }}

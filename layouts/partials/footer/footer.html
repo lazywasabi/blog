@@ -1,8 +1,8 @@
 <div
   class="relative content-margin py-6 text-center bg-gray-200 lg:py-12 dark:bg-gray-800"
 >
-  {{ partial "footer/links.html" . }}
-  {{ partial "footer/top.html" . }}
+  {{ partialCached "footer/links.html" . }}
+  {{ partialCached "footer/top.html" . }}
 </div>
 {{ if .IsHome }}
   <script
@@ -10,4 +10,4 @@
     src="https://identity.netlify.com/v1/netlify-identity-widget.js"
   ></script>
 {{ end }}
-{{ partial "footer/resources.html" . }}
+{{ partialCached "footer/resources.html" . }}

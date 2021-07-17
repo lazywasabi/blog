@@ -18,7 +18,7 @@ collections:
     preview_path: 'blog/{{fields.slug}}'
     fields:
       - { label: 'Title', name: 'title', widget: 'string', required: true }
-      - { label: 'Draft', name: 'draft', widget: 'boolean' }
+      - { label: 'Draft', name: 'draft', widget: 'boolean', required: false }
       - { label: 'Slug', name: 'slug', widget: 'string', required: true }
       - {
           label: 'Author',
@@ -92,7 +92,7 @@ collections:
     preview_path: '{{fields.slug}}'
     fields:
       - { label: 'Title', name: 'title', widget: 'string', required: true }
-      - { label: 'Draft', name: 'draft', widget: 'boolean' }
+      - { label: 'Draft', name: 'draft', widget: 'boolean', required: false }
       - { label: 'Slug', name: 'slug', widget: 'string', required: true }
       - {
           label: 'Author',
@@ -121,5 +121,10 @@ collections:
           summary: '{{fields.image}}',
           field: { label: Image, name: image, widget: image },
         }
-      - { label: 'Center Title', name: 'center_title:', widget: 'boolean' }
+      - {
+          label: 'Center Title',
+          name: 'center_title:',
+          widget: 'boolean',
+          required: false,
+        }
       - { label: 'Content', name: 'body', widget: 'markdown' }

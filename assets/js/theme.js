@@ -1,5 +1,4 @@
 const html = document.querySelector('html').classList;
-const toggle = document.querySelector('.theme-toggle');
 const toggleAuto = document.querySelector('.new-theme-auto').classList;
 const toggleLight = document.querySelector('.new-theme-light').classList;
 const toggleDark = document.querySelector('.new-theme-dark').classList;
@@ -30,19 +29,6 @@ function themeDark() {
   toggleAuto.remove('active');
   toggleLight.remove('active');
   toggleDark.add('active');
-}
-
-function changeTheme() {
-  const theme = localStorage.theme;
-  if (theme === 'auto') {
-    themeDark();
-  } else if (theme === 'dark') {
-    themeLight();
-  } else if (theme === 'light') {
-    themeAuto();
-  } else {
-    themeAuto();
-  }
 }
 
 function setTheme() {

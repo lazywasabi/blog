@@ -3,6 +3,7 @@ title: เกี่ยวกับ
 slug: about
 author: LazyWasabi
 center_title: true
+"center_title:": true
 ---
 
 **[🚚 ETS2 Thai Navigation](/ets2thainav/)**

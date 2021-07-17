@@ -1,0 +1,128 @@
+backend:
+  name: github
+  repo: lazywasabi/blog
+  branch: main
+  cms_label_prefix: cms/
+  squash_merges: true
+  use_graphql: true
+
+publish_mode: editorial_workflow
+media_folder: 'static/uploads'
+public_folder: '/uploads'
+site_url: https://lazywasabi.com
+logo_url: https://cdn.lazywasabi.net/blog/cms/logo.png
+
+collections:
+  - name: 'post'
+    label: 'Post'
+    folder: 'content/posts'
+    create: true
+    slug: '{{year}}-{{month}}-{{day}}-{{fields.slug}}'
+    preview_path: 'blog/{{fields.slug}}'
+    fields:
+      - { label: 'Title', name: 'title', widget: 'string', required: true }
+      - { label: 'Draft', name: 'draft', widget: 'boolean' }
+      - { label: 'Slug', name: 'slug', widget: 'string', required: true }
+      - {
+          label: 'Author',
+          name: 'author',
+          widget: 'string',
+          default: 'LazyWasabi',
+          required: true,
+        }
+      - {
+          label: 'Publish Date',
+          name: 'date',
+          widget: 'datetime',
+          format: 'YYYY-MM-DDTHH:mm:ssZZ',
+          required: true,
+        }
+      - {
+          label: 'Update Date',
+          name: 'lastmod',
+          widget: 'datetime',
+          format: 'YYYY-MM-DDTHH:mm:ssZZ',
+          default: '',
+          required: false,
+        }
+      - {
+          label: 'SEO Title',
+          name: 'seo_title',
+          widget: 'string',
+          required: false,
+        }
+      - {
+          label: 'Description',
+          name: 'description',
+          widget: 'text',
+          required: false,
+        }
+      - {
+          label: 'Featured Image',
+          name: 'images',
+          widget: 'list',
+          required: false,
+          summary: '{{fields.image}}',
+          field: { label: Image, name: image, widget: image },
+        }
+      - { label: 'Tags', name: 'tags', widget: 'list', required: false }
+      - label: 'Comments'
+        name: 'comments'
+        widget: 'object'
+        summary: '{{fields.id}}/{{fields.username}}/{{fields.id}}'
+        required: false
+        fields:
+          - {
+              label: 'Mastodon Instance',
+              name: 'host',
+              widget: 'string',
+              default: 'mastodon.social',
+            }
+          - {
+              label: 'Username',
+              name: 'username',
+              widget: 'string',
+              default: 'lazywasabi',
+            }
+          - { label: 'Toot ID', name: 'id', widget: 'string' }
+      - { label: 'Content', name: 'body', widget: 'markdown' }
+
+  - name: 'page'
+    label: 'Page'
+    folder: 'content/pages'
+    create: true
+    slug: '{{fields.slug}}'
+    preview_path: '{{fields.slug}}'
+    fields:
+      - { label: 'Title', name: 'title', widget: 'string', required: true }
+      - { label: 'Draft', name: 'draft', widget: 'boolean' }
+      - { label: 'Slug', name: 'slug', widget: 'string', required: true }
+      - {
+          label: 'Author',
+          name: 'author',
+          widget: 'string',
+          default: 'LazyWasabi',
+          required: true,
+        }
+      - {
+          label: 'SEO Title',
+          name: 'seo_title',
+          widget: 'string',
+          required: false,
+        }
+      - {
+          label: 'Description',
+          name: 'description',
+          widget: 'text',
+          required: false,
+        }
+      - {
+          label: 'Featured Image',
+          name: 'images',
+          widget: 'list',
+          required: false,
+          summary: '{{fields.image}}',
+          field: { label: Image, name: image, widget: image },
+        }
+      - { label: 'Center Title', name: 'center_title:', widget: 'boolean' }
+      - { label: 'Content', name: 'body', widget: 'markdown' }

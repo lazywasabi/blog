@@ -11,7 +11,7 @@
         {{ partialCached "header/navbar.html" . }}
         {{ block "main" . }}{{ end }}
       </div>
-      {{ partial "footer/footer.html" . }}
+      {{ partialCached "footer/footer.html" . }}
     </div>
   </body>
 </html>
